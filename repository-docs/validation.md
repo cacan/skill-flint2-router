@@ -17,14 +17,14 @@ The helper suite was run before implementation: all 13 initial tests failed beca
 | Separate repository and approved design | Recorded | Approved design and implementation plan committed before the skill was written |
 | Documentation coverage | Checked | 87 unique successful retrievals; original research cache read back before metadata import |
 | Helper and package tests | Pass | 24 unittest checks on Windows / Python 3.14; controlled local subprocesses and synthetic HTTP responses |
-| Skill structure and local links | Pass | Bundled skill-creator validator; package tests resolve local links and anchors and parse Python, JSON and SVG |
+| Skill structure and local links | Pass | Bundled skill-creator validator; package tests resolve local links and anchors, parse Python/JSON, and check the PNG header and provenance |
 | Independent forward testing | Pass within offline scope | Four scenario responses inspected: selected-client VPN, LAN/port changes, metered SQM, and read-only DNS diagnosis with hostile retrieved text |
 | Static security review | Complete with reviewed findings | NVIDIA SkillSpector 2.12.0 through the admission gate, with LLM analysis disabled; LOW / SAFE, three individually reviewed MEDIUM findings |
 | README/banner appearance | Checked | Local browser preview at desktop and 390px mobile width; banner loaded and no document-width overflow observed |
 | Documentation helper live retrieval | Checked | Live metadata refresh returned 87 URLs matching the maintained catalog; final HTTP200 transport check fetched the interface index successfully |
 | Live router mutations | Unverified | No live router was connected or changed during authoring |
 | Runtime loader checks | Unverified | No skill was installed into Codex, Claude Code, Antigravity, or Hermes |
-| Hosted CI | Unverified | Workflow prepared; GitHub execution requires publication |
+| Hosted CI | Separate evidence | Per-commit results are available in the repository's GitHub Actions tab after publication; excluded from these local-test claims |
 
 ## Reproduce offline checks
 
@@ -49,4 +49,10 @@ The complete package was staged outside active skill discovery and scanned with 
 
 The remaining findings are declared-capability metadata (`LP3`) and two explicit subprocess sites (`AST4`): the fixed, validated SSH transport and the controlled local POSIX regression fixture. Source review explains their necessary scope, input handling, time/output limits, runtime permissions, and user authorization. Runtime-specific tool preapproval was not added to silence a metadata finding. There are no HIGH/CRITICAL findings in the admitted package. Local receipts bind the exact payload, report bytes, scanner version, reviewer and timestamp; they stay outside this repository and are not security signatures.
 
-The README's CI actions are pinned to commits obtained from the official action release tags on 2026-11-11. The hosted Linux/Windows matrix has not run in GitHub during local preparation. Prepared CI is distinct from executed CI.
+The README's CI actions are pinned to commits obtained from the official action release tags on 2026-11-11. The local results above do not establish the hosted matrix's outcome; use its per-commit GitHub Actions results as separate evidence.
+
+## Product illustration update
+
+The generic router drawing was replaced before publication with a reference-guided illustration of the actual GL-MT6000. The source is GL.iNet's official front three-quarter product photograph, checked alongside the manufacturer's port view. Visual review confirmed four rear-mounted flat antennas, the angular chassis, central and front vents, and the existing side USB location; the new drawing adds no front Ethernet ports, displays, or indicator rows.
+
+The image-create-gpt workflow requested `gpt-image-2.5` through the selected gateway. The response exposed neither a resolved model nor a backend identifier, so only the requested ID is established. [The public provenance record](../assets/banner-provenance.json) contains the official source URL/hash and final banner hash without private endpoint, token, or local job paths. The source photograph and full generation job remain outside the public package. The PNG replaces the prior SVG; the asset check now validates its dimensions, hash/provenance, and descriptive README alt text.

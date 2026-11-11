@@ -2,11 +2,12 @@
 import ast
 from datetime import date
 import json
+import hashlib
 from pathlib import Path
 import re
+import struct
 import unittest
 from urllib.parse import unquote, urlsplit
-from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -56,15 +57,19 @@ class PackageTests(unittest.TestCase):
             self.assertLessEqual(date.fromisoformat(when), date.today())
             self.assertNotIn("body", record)
 
-    def test_banner_is_accessible_self_contained_svg(self):
-        svg = ElementTree.parse(ROOT / "assets" / "banner.svg").getroot()
-        ns = {"s": "http://www.w3.org/2000/svg"}
-        self.assertIsNotNone(svg.find("s:title", ns))
-        self.assertIsNotNone(svg.find("s:desc", ns))
-        self.assertEqual(svg.attrib["role"], "img")
-        for node in svg.iter():
-            self.assertNotIn(node.tag.split("}")[-1], ["script", "foreignObject", "image"])
-            self.assertFalse(any(key.lower().startswith("on") for key in node.attrib))
+    def test_banner_is_static_png_with_provenance_and_alt_text(self):
+        data = (ROOT / "assets" / "banner.png").read_bytes()
+        self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+        self.assertEqual(data[12:16], b"IHDR")
+        self.assertEqual(struct.unpack(">II", data[16:24]), (1280, 440))
+        provenance = json.loads((ROOT / "assets" / "banner-provenance.json").read_text(encoding="utf-8"))
+        self.assertEqual(provenance["asset"]["sha256"], hashlib.sha256(data).hexdigest())
+        self.assertEqual(provenance["asset"]["path"], "assets/banner.png")
+        self.assertEqual((provenance["asset"]["width"], provenance["asset"]["height"]), (1280, 440))
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        alt = re.search(r'src="assets/banner.png" alt="([^"]+)"', readme)
+        self.assertIsNotNone(alt)
+        self.assertGreater(len(alt[1]), 30)
 
     def test_python_sources_parse_and_no_router_binaries_are_packaged(self):
         for path in list((ROOT / "scripts").glob("*.py")) + list((ROOT / "tests").glob("*.py")):

@@ -6,4 +6,6 @@ The skill links to GL.iNet's [Flint 2 guide](https://docs.gl-inet.com/router/en/
 
 OpenWrt, OpenSSH, WireGuard, OpenVPN, AdGuard Home, Tailscale, ZeroTier, and other named software are independent third-party projects with their own licenses and policies. Names are used to identify interoperability and configuration topics.
 
-The README banner is original abstract vector artwork. It is not an official product image or GL.iNet logo. README badges are served by Shields.io when the reader's client loads them; the helpers do not contact that service.
+The README banner contains an AI-generated, reference-guided illustration of the actual Flint 2, with original header layout and typography. The original photograph is not redistributed. Product-design and trademark rights remain with their owners. The illustration is not a manufacturer photograph, a specification diagram, or an endorsement. [Asset metadata](assets/banner-provenance.json) records the generation method, requested model, model-reporting limitation, visual checks and output hash.
+
+README badges are served by Shields.io when the reader's client loads them; the helpers do not contact that service.

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Flint 2 Router: firmware-aware configuration for GL-MT6000, from inspection to verified change" width="1280">
+  <img src="assets/banner.png" alt="Flint 2 Router: reference-guided illustration of the actual GL-MT6000 with four rear antennas and its distinctive vented chassis" width="1280">
 </p>
 
 <p align="center">

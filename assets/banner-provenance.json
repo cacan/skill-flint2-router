@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-11-11",
+  "device": {
+    "manufacturer": "GL.iNet",
+    "model": "GL-MT6000",
+    "product_name": "Flint 2",
+    "official_product_page": "https://www.gl-inet.com/products/gl-mt6000/"
+  },
+  "generation": {
+    "workflow": "image-create-gpt reference-guided edit, followed by deterministic header typesetting",
+    "requested_model": "gpt-image-2.5",
+    "reported_model": null,
+    "backend_identifier": null,
+    "verification_note": "The gateway advertised and received the exact requested model ID but did not expose the resolved response model or backend identifier."
+  },
+  "asset": {
+    "path": "assets/banner.png",
+    "width": 1280,
+    "height": 440,
+    "sha256": "a8c18385adc99448e14be6eaf20dd28eb4aaa0c30c616f655e8ff5ff9ff2b43d"
+  },
+  "visual_review": [
+    "Four flat rear-mounted antennas match the actual device.",
+    "Angular low chassis, central top vents, recessed side panels and front vent banks follow the actual product.",
+    "Front three-quarter view retains the visible side USB position; rear Ethernet ports are not shown.",
+    "No added display, front Ethernet sockets, indicator row or decorative device controls."
+  ],
+  "scope": "Stylized product illustration, not a port map, dimensional drawing, product photograph or manufacturer endorsement."
+}
