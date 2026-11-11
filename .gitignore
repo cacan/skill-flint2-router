@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.local/
+.cache/
+dist/
+*.log
+*.tar.gz
+*.tgz
+*.bin
+*.pem
+*.key
+.env
+.env.*
+.DS_Store
+Thumbs.db

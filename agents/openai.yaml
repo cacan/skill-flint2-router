@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flint 2 Router"
+  short_description: "Configure Flint 2 with firmware-aware SSH workflows"
+  default_prompt: "Use $skill-flint2-router to inspect my GL-MT6000 and carry out my requested configuration with recovery and verification."

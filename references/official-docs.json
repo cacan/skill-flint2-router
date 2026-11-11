@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "fetched_on": "2026-11-11",
+  "scope": "https://docs.gl-inet.com/router/en/4/interface_guide/",
+  "discovery": [
+    "https://docs.gl-inet.com/router/en/4/sitemap.xml",
+    "https://docs.gl-inet.com/router/en/4/interface_guide/"
+  ],
+  "version_note": "Version mentions are search hints, not firmware compatibility guarantees.",
+  "records": [
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/features_update/firmware_v4.10/",
+      "title": "Firmware v4.10",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "961290a8f76ea19e25bc4a0b46c1e7574cbde97b26b4f63af3bd24aaef7b63af",
+      "version_mentions": [
+        "v4.10"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/features_update/firmware_v4.11/",
+      "title": "Firmware v4.11",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "43edbcf61bf440bb4ac8177a2ec4ec78c8c898d68ecc6fe79d904a4c3258a911",
+      "version_mentions": [
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/features_update/firmware_v4.9/",
+      "title": "Firmware v4.9",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0f5b01166304cc507fe9052f04e0d0908241dcee50c725f7a85df6ddba9305c2",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/",
+      "title": "Interface Guide",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "ac86c5badded4496d2a63a4012156a48e41f0f42f8861395a841495cae521934",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/acl/",
+      "title": "ACL",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "3b588fb0de0a5882067936e2a9ec54be4b59d7641875dff9cf8b80f1610d4615",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/adguardhome/",
+      "title": "AdGuard Home",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "b1fcb685bcccb9784e547226c69ee2fd327ff98db94618abf12ada2d09a2bdd8",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/admin_access/",
+      "title": "Admin Access",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "deed96506814f7b596ee53f9bb46230a3f66dc581091913dd1d6dc727f5dc796",
+      "version_mentions": [
+        "v4.7",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/admin_password/",
+      "title": "Admin Password",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "ea0dd2450cd6a0d84a2bec962a702404906c367558c4f21f4f67ec1d39cec6bd",
+      "version_mentions": [
+        "v4.3",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/advanced_settings/",
+      "title": "Advanced Settings",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "bc689d865ecbb597838d3cf6d99c249c0c2b8a0b5cb61a5d4db10c4ca8bf0a6d",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/astrowarp/",
+      "title": "AstroWarp",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "d28e3b35041c60a6170fd2a794cfca986f7490d4e5c1c0e1b1e9ceaed3c641f3",
+      "version_mentions": [
+        "v4.10",
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/bark/",
+      "title": "Bark",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "fa11de3c6d8026f1908bf69a0a4be2f301fd291cbbac26083f2c6a8eabd34a01",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/clients/",
+      "title": "Clients",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "26edda686d81c63f241d81238e4fe2d7625f8608903fb0e2e43864a19c8ac9e1",
+      "version_mentions": [
+        "v4.11",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/cloud/",
+      "title": "GL.iNet GoodCloud",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "28ee94aeb80a72d2a71c353a42e3cba5d52d91b1eef0e4888a960c8aee35e95c",
+      "version_mentions": [
+        "v4.10",
+        "v4.6",
+        "v4.7",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/content_filter/",
+      "title": "Content Filter",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "213ef35030f446c99f6d227e5ceda19dce74285a7a16a22c34abb2fa996c09e5",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/data_statistics/",
+      "title": "Data Statistics",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "1c0e8a0e3c9107c032bbaec6614bea12f1cbfc0e211ce6ccb93c456e971bcd52",
+      "version_mentions": [
+        "v4.10",
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/ddns/",
+      "title": "Dynamic DNS",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "1d5afeb5649e75a60ff6c44888e5b4f88dd9219ab1af76c871dc24351a33eb83",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/display_management/",
+      "title": "Display Management",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "091b2cc94317a341b14d4ba7a79172a1aad81c5807cc799b5f78b8b2bac097bf",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/dns/",
+      "title": "DNS",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "a3c548f6e47196a4cdb8427950f7b132ae0d1a754bef5324ec7d48e964528878",
+      "version_mentions": [
+        "v4.10",
+        "v4.11",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/dns_v4.11/",
+      "title": "DNS",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "6592af55ba4056d23478294909b4da743ad543c0bf7483183600ce51275c2178",
+      "version_mentions": [
+        "v4.10",
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/dpi_engine/",
+      "title": "DPI Engine",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "9a1081836ecb24cc47193530d7efe64444dc60b94aacd4725a551062b1802300",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/drop-in_gateway/",
+      "title": "Drop-in Gateway",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0cec75a691d9f97f82b67d96f09fc1a3b3961be673722409dbef580c30ca68ad",
+      "version_mentions": [
+        "v4.2"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/esim_management/",
+      "title": "eSIM Management",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "e006a7818898d2df032407ddd0b84d1cb7c8fa183baf1c7a31f40e25f68ed572",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/ethernet_port/",
+      "title": "Ethernet Port",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "fb23eb112b96a088a77cf1f6cf38be5e14bf59ab3745c83b3e20815f1c25022c",
+      "version_mentions": [
+        "4.9",
+        "v4.10",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/ethernet_port_v4.10/",
+      "title": "Ethernet Port (Firmware v4.10 and above)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f7698459b1d6ac83949d85a31c1538c6db27156d1778a081470579e5ab4a72cc",
+      "version_mentions": [
+        "v4.10",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/expressvpn_activation_guide/",
+      "title": "ExpressVPN Activation Guide",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "b5699f908e4be267bd2255a56289866b815c9bed6421fa8ff25971128df4ddc3",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/firewall/",
+      "title": "Firewall",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "3efb801040205005f79811ad1f93c1cbe59a8b42f483bf66d4c94cf6c8eab8ae",
+      "version_mentions": [
+        "v4.5",
+        "v4.6"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/glinet_account/",
+      "title": "GL.iNet Account",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0bdbe43b0cfb27a533fa4a5f2e690b602719fce2740677ff4d304031ff7b7f11",
+      "version_mentions": [
+        "v4.10"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/goodpas/",
+      "title": "GoodPAS",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "c254db4c26b93cb849710f3f0e86d179d31386fc9755865f41ed86d71825ec27",
+      "version_mentions": [
+        "v4.10",
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/guest_network/",
+      "title": "Guest Network",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "2a85b0432a996d80f6267f880bd05f15111bdebaf95fb4daf9ac7eb4c0b82942",
+      "version_mentions": [
+        "v4.5",
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/hardware_acceleration/",
+      "title": "Hardware Acceleration",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "dab95d326e79a64f9d5ebccfa6d6d0283c1f912ae7aab0dfdc3bb82cd590bed5",
+      "version_mentions": [
+        "v4.2"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/help/",
+      "title": "Help",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "530a9c9e70d4ac43ce8b099ab685867ad2538ba28b387d0087ece01bbca286bc",
+      "version_mentions": [
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/how_to_set_up_urban_shield_vpn_on_glinet_router/",
+      "title": "How to Set Up Urban Shield VPN on GL.iNet Router",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "03b6cdf4c3ef530db902369b8ba6852e35cdc5f82d0d8b78a17f0af02cd631d3",
+      "version_mentions": [
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/igmp_snooping/",
+      "title": "IGMP Snooping",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "c44794ce8285969efc423f212f269faee9260ac95bcc43160f1a3f6ee65ae94f",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet/",
+      "title": "Internet",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0f589e1cec32dd68db6e2aecfde078fba7a39d942b73715c84b4ee052ac1c7ee",
+      "version_mentions": [
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_cellular/",
+      "title": "Connect to the Internet via cellular (v4.8-v4.9)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "4302bf01817305d75111e3146ef76102ff34082422e514f13b5ae13debeb96d1",
+      "version_mentions": [
+        "v4.10",
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_cellular_v4.10/",
+      "title": "Connect to the Internet via cellular (v4.10)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "6ebf0df98fa215a07896436cd9d5131e7a2cd5b73b67a5e49da0b5f8c4d2a2df",
+      "version_mentions": [
+        "v4.10",
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_cellular_v4.7/",
+      "title": "Connect to the Internet via cellular (v4.7 and earlier)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f105d3bfa185a5baea054c3cceb62f1519e80480d2a27fc6fa685bef231e9ae0",
+      "version_mentions": [
+        "v4.10",
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_ethernet/",
+      "title": "Connect to the Internet via an Ethernet cable",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "cb805eeb6d58431eaf7a6ebc148f7e2aef2a91d687fa3933fa6a7c70ca399585",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_repeater/",
+      "title": "Connect to the Internet via an existing Wi-Fi by Repeater",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "4fc27f1a10770c0d57cc30d7944121b2c292cf267d0c5fca92da2d23c1fac3ef",
+      "version_mentions": [
+        "v4.6"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/internet_tethering/",
+      "title": "Connect to the Internet via USB tethering",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0dbe4e499770bf7ba3ad9fc5a48ad4bf19c98a3cb22af109f2d8d42955dc91f9",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/iot_network/",
+      "title": "IoT Network",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f9e0daf4b248ca5d5f5a1180de94c7ce487b0599596e5878edb708a003f4fc91",
+      "version_mentions": [
+        "v4.5",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/ipv6/",
+      "title": "IPv6",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "007f4409f514691639a2f90a11c7743b31f0821d9f8a52062603ac084681ef3b",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/lan/",
+      "title": "LAN",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "a32d8b4362814731155bf28ec53b524d8017360b32c86d79af05970f9c5cea86",
+      "version_mentions": [
+        "v4.11",
+        "v4.5",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/lan_4.11/",
+      "title": "LAN",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "5380f884cd0f14af6a8216ba3ff7bf0afacc3a41f8566738809dc754aa1f13db",
+      "version_mentions": [
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/log/",
+      "title": "Log",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "4ba1edbec15279f8193fb01cf6528168882b88dc0d958c6ae19a48f6defc456c",
+      "version_mentions": [
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/mac_address/",
+      "title": "MAC Address",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "13c5263aa5d90f4f63bc1739506adce767e487b6d6170a9226bc69661cc95824",
+      "version_mentions": [
+        "v4.2",
+        "v4.5",
+        "v4.6"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/mesh/",
+      "title": "Mesh",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "7f5cde769afce1492d56b1c4313f60d5149cb01722a0ffb4858aba42d9354fc1",
+      "version_mentions": [
+        "v4.10"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/multi-wan/",
+      "title": "Multi-WAN",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "63a3a6682495545b77f4a329796edd52924d77ba3192a29a304b4b12d44c05a0",
+      "version_mentions": [
+        "v4.3",
+        "v4.5",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/nat_settings/",
+      "title": "NAT Settings",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "b341e11312b6b69677aa97f31cbd963eeb5cb5debac5784e8ce60c32b5c7fa6b",
+      "version_mentions": [
+        "v4.5",
+        "v4.7",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/network_acceleration/",
+      "title": "Network Acceleration",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "402c938c83654eb7a1627b0b840a3a417de00b8d3c5091cd320a662b41e8c0ff",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/network_mode/",
+      "title": "Network Mode",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "029e81dcf872d97198364fcf0f3524e14d57901f680ceb1f7d0d81c09a574439",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/network_quality/",
+      "title": "Network Quality",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "d3366a8532f64b40cd3f0fcd065789ae8f61167a7795ed014e4d28d5d0b99356",
+      "version_mentions": [
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/network_storage/",
+      "title": "Network Storage",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f97dfd23142134780121fb24e22fb25cedff4bcf28a6afc47b3a084ac3c4a204",
+      "version_mentions": [
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/openvpn_client/",
+      "title": "Set Up OpenVPN Client on GL.iNet Routers",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "960fe035f7fcf09632d35eec34f86196bb79dd7cc88df24fdbb30653e0f0ca47",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/openvpn_server/",
+      "title": "Set Up OpenVPN Server on GL.iNet Routers",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "e40b2c3526d54568e227b4f68ef2ba65f2bb208f5e12b71869d419858c9f4358",
+      "version_mentions": [
+        "v4.7",
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/parental_control/",
+      "title": "Parental Control",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "eec66fa02f486a15bc7082c08aba4f330321f52878e3fef299f4a6e35ae68211",
+      "version_mentions": [
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/parental_control_v4.9/",
+      "title": "Parental Control (Firmware v4.9)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "eae2bc8100ed0edcc831a44127b27545f6147c6f3b9bfc028f853bedf884b4a1",
+      "version_mentions": [
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/plugins/",
+      "title": "Plug-ins",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "b05c0571e9ec6775243c88f84ae8be06882ce97a4f2902270b034f0f63cd24ea",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/port_forwarding/",
+      "title": "Port Forwarding",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f319f8fc0a0c5ccd7fe95ab218f6b04aaf964cb71f087784c6c629a93a68908f",
+      "version_mentions": [
+        "v4.6",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/qos/",
+      "title": "QoS (Quality of Service)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "e7f5687642990df12c246d5c8b03e93028a98ed59a8ee663ad4d72b703b22542",
+      "version_mentions": [
+        "v4.10",
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/reset_firmware/",
+      "title": "Reset Firmware",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "45f4220d319449031a9c6fba9515ec9b125161d2c40d0e4bfb0f574e5325598c",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/scheduled_tasks/",
+      "title": "Scheduled Tasks",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "1a5d3b3a61037f381f5743d0954d64367dc333ac5965141ff8c409c32f3a3c86",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/security/",
+      "title": "Security",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "5f2ca1c7cf4a7228cee9d4841a35fbf9fa65f6abe42b33781277d4e716e1d02a",
+      "version_mentions": [
+        "v4.5",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/security_scan/",
+      "title": "Security Scan",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "1e3858792bdaf9a17a7a16f342cc2a8042e3a8c47282749da9d1fceba8e48be3",
+      "version_mentions": [
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/sqm/",
+      "title": "SQM (Smart Queue Management)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "2c37176957e26f6b57e6913cdceed4839d2609dceda5f32d4c6ab13cb761c15e",
+      "version_mentions": [
+        "v4.10",
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/subnet/",
+      "title": "Subnet",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "4135b96dde2dcbea396241e47172aa9ad57b4e6904d54a43e7d76cc70f8ddda2",
+      "version_mentions": [
+        "v4.10",
+        "v4.5"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/system_overview/",
+      "title": "System Overview",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "43b0b98e540e809ebded228b632bb9c7fe7e761a81f996d24ea0e009fa3033b6",
+      "version_mentions": [
+        "v4.5",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/tailscale/",
+      "title": "Tailscale",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "9c6ea064da4020f546e70ea40c2baee6c94c90a51bd3f4f70d0a251ba2d90d44",
+      "version_mentions": [
+        "v4.2",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/time_zone/",
+      "title": "Time Zone",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "9f8cdcd86c752e1f525bfc69753afeed8b867cb25f7215586329c3523d861e47",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/toggle_button_settings/",
+      "title": "Toggle Button Settings",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "7a3aa60fb4cc8877c0914165cee9bee6f3dc8226d76c1cf85ac40c5b3cf21a89",
+      "version_mentions": [
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/tor/",
+      "title": "Tor",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "11c11983dd1dcd35a3aa6ab33ed40f14e5faac407c6edc41fd766613bf1c720f",
+      "version_mentions": [
+        "v4.8.4"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/ui_languages/",
+      "title": "UI Languages",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f7583da57d9df480245256c6cddee70d4a0758b2cd2a47c6e46cf02bac3ee71c",
+      "version_mentions": [
+        "v4.6"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/upgrade/",
+      "title": "Upgrade",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "2f82f8c97aa8553f06e766f948df92f0d7c7549a019993fd32672213d2dec1b6",
+      "version_mentions": [
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/upnp/",
+      "title": "UPnP",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "ab7b5e639766b4a14c04059d501313379a82bc7e0aec54ef52170b717c2ba076",
+      "version_mentions": [
+        "v4.11"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/usb_power/",
+      "title": "USB & Power",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "e29dd05274a93a7e9b632bcadfcf9c538afab5158e22e9c203312ad3344af863",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/vpn_client_profile/",
+      "title": "VPN Client Profile",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f2dc3d6bd18f74b62a93c3f11a923b0724617a3adb912d0949d833ae119e11a4",
+      "version_mentions": [
+        "v4.11",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/vpn_dashboard/",
+      "title": "VPN Dashboard",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "f5f08032b75dffb605463e9e9b521bf0e95d1fce85e81f818a0aa03043db886f",
+      "version_mentions": [
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/vpn_dashboard_v4.7/",
+      "title": "VPN Dashboard (Firmware v4.7 and earlier)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "57b7ba82edb83c1dc4b03bd839a64b1a42a4e317367c96f29a54ad166bd919a9",
+      "version_mentions": [
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/vpn_dashboard_v4.8/",
+      "title": "VPN Dashboard (Firmware v4.8)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "adc55ac9060dd913d77a34c14557555ef1536d3f2c0639827872d12f94b11c27",
+      "version_mentions": [
+        "v4.7",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/wireguard_client/",
+      "title": "Set Up WireGuard Client on GL.iNet Routers",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "0bc9f23eeff88c9b2b166983005e66d06d72a84089749b3822e92d540ae5e0aa",
+      "version_mentions": [
+        "v4.11",
+        "v4.6",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/wireguard_client_v4.6/",
+      "title": "Set Up WireGuard Client on GL.iNet Routers",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "38ba278febbef81ffd659c3701f4f9ec41b3214171210464783f586b032844c6",
+      "version_mentions": [
+        "4.0",
+        "v4.6",
+        "v4.7"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/wireguard_server/",
+      "title": "Set Up WireGuard Server on GL.iNet Routers",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "241ba33c9054aed1ecd10850e64d3e92e857f23773fc1f12665b16adc9557d97",
+      "version_mentions": [
+        "v4.7",
+        "v4.8"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/wireless/",
+      "title": "Wireless",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "210a5b6432fa5ab0a02643c8194ceb3f82ff699c1755354d437cbd278d9eb0e0",
+      "version_mentions": [
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/wireless_v4.8/",
+      "title": "Wireless (Firmware v4.8 and earlier)",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "bab7956f65a1bfb963c794f3bf289f5654ce93a6f80522b268567aeececb3bcf",
+      "version_mentions": [
+        "v4.6",
+        "v4.8",
+        "v4.9"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/interface_guide/zerotier/",
+      "title": "ZeroTier",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "ee086419c17de00bd199868cea7ee655e1a9c0514b51c3ff1d45315d026bf005",
+      "version_mentions": [
+        "v4.2"
+      ]
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/tutorials/ssh_log_in_to_the_router/",
+      "title": "SSH Log in to the Router",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "91d6c1a249303bdfa0d3fb1b2d33b76d25b35aa91e63e033f2d3977516638381",
+      "version_mentions": []
+    },
+    {
+      "url": "https://docs.gl-inet.com/router/en/4/user_guide/gl-mt6000/",
+      "title": "Flint 2 (GL-MT6000) User Guide",
+      "fetched_on": "2026-11-11",
+      "status": 200,
+      "body_sha256": "9105a6ab4e2cee1f62a053dfd7e580949f421da20c68559dc3208c42e873e2e4",
+      "version_mentions": []
+    }
+  ]
+}
