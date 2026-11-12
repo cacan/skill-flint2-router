@@ -76,9 +76,67 @@ Inspect the model and firmware, then reserve <client-address> for
 
 Supply the existing router address and intended outcome. Keep admin passwords, Wi-Fi passwords, VPN keys, and full configuration exports out of prompts and issues.
 
+<details>
+<summary><strong>SSH access: first connection, passwords, and existing keys</strong></summary>
+
+Run SSH from the machine where your agent executes commands, using the router's actual reachable address and configured SSH port. `router.example` below is a placeholder. The official GL.iNet guide uses the `root` account and port `22`; use your configured values if different.
+
+```sh
+ssh -p 22 root@router.example
+```
+
+Verify the host fingerprint through a trusted channel before accepting a first connection. If SSH requests a password, enter the router's **web-admin password** in the terminal prompt, never in a chat message or command argument. See the [official SSH login guide](https://docs.gl-inet.com/router/en/4/tutorials/ssh_log_in_to_the_router/) and [Admin Access settings](https://docs.gl-inet.com/router/en/4/interface_guide/admin_access/).
+
+| Route | Authentication |
+| --- | --- |
+| Ordinary interactive SSH | Existing authorized key/SSH agent, or an interactive admin-password prompt when the router allows it. The agent's terminal must support secure interactive entry to use that route. |
+| Optional Python inventory helper | Existing authorized key through OpenSSH configuration/SSH agent, or `--identity` selecting an existing key file. It uses `BatchMode=yes` and `StrictHostKeyChecking=yes`: no password prompt and no automatic first-time host-key acceptance. |
+
+A successful manual login verifies that connection; it does not authenticate the helper's separate SSH process. A passphrase-protected key must already be usable non-interactively, for example through the existing SSH agent. Key creation/authorization and SSH setting changes are separate actions, not part of the read-only review.
+
+Start the full review by opening a new Hermes chat and pasting the **Start here** prompt below. Supply the actual connection details if Hermes does not already have them. The helper alone returns a small identification inventory, not the complete configuration review. Detailed access rules and helper options are in [Access and discovery](references/access-and-discovery.md).
+
+</details>
+
 ## Try it
 
-**A work laptop with a fail-closed VPN**
+Choose a starting prompt. Each example is collapsed so you can expand only the task you need.
+
+<details>
+<summary><strong>Start here: read-only SSH configuration review (Hermes)</strong></summary>
+
+Paste this into a new Hermes chat after installing the skill. It reuses existing connection details or asks for the missing ones, reviews current state, and stops before applying changes.
+
+```text
+Use your installed skill-flint2-router skill to inspect my GL.iNet Flint 2 (GL-MT6000) over SSH and review its current configuration. This task is read-only: inspect, explain, and recommend; do not apply changes.
+
+Reuse any router address, SSH profile, port, username, and authentication method already recorded in your context. If access details are missing, ask only for what you need. Do not assume the factory IP, scan the network, try default credentials, or ask me to paste passwords or private keys into chat. Verify SSH host identity and stop on a mismatch.
+
+Confirm the actual hardware, GL.iNet firmware version, OpenWrt base/SDK, operating mode, available tools, and management connection path. Use the skill's read-only inventory helper where appropriate; it is only the starting point, not a complete configuration review.
+
+Review the configuration and effective runtime state, covering the features actually present:
+- WAN/LAN addressing, DHCP, physical port roles, bridges/VLANs, guest/IoT isolation, and IPv6.
+- Wi-Fi security and relevant radio settings.
+- DNS resolution, AdGuard Home, VPN tunnels, routing policies, kill switches, and their interactions.
+- Firewall and administration exposure, SQM/QoS/acceleration, relevant services, and basic resource health.
+
+Use targeted reads and documented or source-verified read methods. Check for pending UCI edits without altering them. Consult matching official documentation as needed. Keep credentials, keys, tokens, full configuration exports, backups, and raw logs out of chat and external uploads; include only necessary sanitized evidence.
+
+Do not commit configuration, reload/restart services, reboot, upgrade, install software, change authentication/trust settings, toggle policies, or run speed tests or disruptive failure tests. If further verification would require such an action, describe it as a proposed next step.
+
+Return:
+1. A concise current-state summary.
+2. Prioritized findings with evidence, likely impact, and recommended action.
+3. What appears sound, what remains unverified, and any access or evidence gaps.
+4. A short proposed change plan, including disruption/recovery considerations, for my review.
+
+Separate observed facts from hypotheses. Do not assume my intended network policy; ask a focused question where that changes your recommendation. Stop after the report and wait for my explicit approval of specific changes.
+```
+
+</details>
+
+<details>
+<summary>A work laptop with a fail-closed VPN</summary>
 
 ```text
 Route only my work laptop through the existing WireGuard tunnel.
@@ -86,7 +144,10 @@ If that tunnel fails, block the laptop's internet. Other devices should
 keep using WAN. Check DNS and IPv6 behavior too.
 ```
 
-**An isolated IoT network**
+</details>
+
+<details>
+<summary>An isolated IoT network</summary>
 
 ```text
 Put the devices on one specified LAN port into an isolated IoT subnet.
@@ -94,7 +155,10 @@ Keep internet, DHCP and DNS working, block access to the main LAN and
 router administration, and prepare recovery before changing ports.
 ```
 
-**Lower latency during a busy connection**
+</details>
+
+<details>
+<summary>Lower latency during a busy connection</summary>
 
 ```text
 Investigate gaming latency under load. Check SQM, QoS and acceleration
@@ -102,12 +166,17 @@ for my installed firmware. This is a metered connection: use existing
 measurements and do not run a speed test.
 ```
 
-**Diagnose before changing**
+</details>
+
+<details>
+<summary>Diagnose before changing</summary>
 
 ```text
 AdGuard Home is enabled, but some clients appear to bypass it.
 Trace the DNS path and explain the evidence. This task is read-only.
 ```
+
+</details>
 
 ## How it works
 
