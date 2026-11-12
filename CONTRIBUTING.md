@@ -37,4 +37,4 @@ Use [the refresh workflow](references/documentation.md) to write a new candidate
 
 ## Runtime integration
 
-The core intentionally uses portable file reading, shell/OpenSSH, and public documentation retrieval. Codex metadata is optional. Document native discovery and actual tool support separately for Codex, Claude Code, Antigravity, and Hermes. An adapter must preserve permission and data boundaries, receive its own complete-payload review if its bytes differ, and be tested in that runtime before being described as supported.
+The core intentionally uses portable file reading, shell/OpenSSH, and public documentation retrieval. Runtime-specific UI metadata is optional. Document native discovery, actual tool support, and permission controls for each target runtime. An adapter must preserve permission and data boundaries, receive its own complete-payload review if its bytes differ, and be tested in that runtime before being described as supported.

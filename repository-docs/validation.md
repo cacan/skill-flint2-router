@@ -23,7 +23,7 @@ The helper suite was run before implementation: all 13 initial tests failed beca
 | README/banner appearance | Checked | Local browser preview at desktop and 390px mobile width; banner loaded and no document-width overflow observed |
 | Documentation helper live retrieval | Checked | Live metadata refresh returned 87 URLs matching the maintained catalog; final HTTP200 transport check fetched the interface index successfully |
 | Live router mutations | Unverified | No live router was connected or changed during authoring |
-| Runtime loader checks | Unverified | No skill was installed into Codex, Claude Code, Antigravity, or Hermes |
+| Runtime loader checks | Unverified during initial authoring | Installation and native loading require separate verification in each target environment |
 | Hosted CI | Separate evidence | Per-commit results are available in the repository's GitHub Actions tab after publication; excluded from these local-test claims |
 
 ## Reproduce offline checks

@@ -8,7 +8,7 @@ Publish a portable agent skill for configuring and troubleshooting the GL.iNet F
 
 ## Architecture
 
-Keep a concise root `SKILL.md`, optional Codex discovery metadata, focused operational references, a machine-readable official documentation inventory, and two dependency-free Python helpers. The helpers discover public documentation and collect a small read-only router inventory; configuration changes remain task-specific rather than an unverified generic mutation engine.
+Keep a concise root `SKILL.md`, optional runtime-specific discovery metadata, focused operational references, a machine-readable official documentation inventory, and two dependency-free Python helpers. The helpers discover public documentation and collect a small read-only router inventory; configuration changes remain task-specific rather than an unverified generic mutation engine.
 
 Route tasks by subject and firmware. Distinguish GL.iNet firmware from upstream OpenWrt, and identify the actual SDK/build, installed tools, configuration sections, firewall backend, network topology, and GL.iNet service ownership before proposing writes. An interface guide demonstrates UI behavior; it does not establish an undocumented SSH or RPC interface.
 
@@ -30,7 +30,7 @@ Use an original accessible SVG banner and a concise, polished GitHub README. Inc
 
 ## Runtime compatibility
 
-Design the core for Codex, Claude Code, Antigravity, and Hermes using only local file reading, a shell/OpenSSH client, and a public documentation retrieval tool. Describe each runtime's native skill discovery separately. Codex metadata does not supply tools or credentials to other runtimes. No runtime is installed or configured by this task; actual loader and live-router support remain unverified until tested in that environment.
+Design the core for any agent runtime that provides local file reading, a shell/OpenSSH client, and a public documentation retrieval tool. Describe each target runtime's native skill discovery separately. Optional UI metadata does not supply tools or credentials to another runtime. No runtime is installed or configured by this authoring task; actual loader and live-router support require separate verification in the target environment.
 
 ## Validation
 

@@ -1,6 +1,6 @@
 # Flint 2 Router Skill Implementation Plan
 
-> For Claude: use the established executing-plans workflow when continuing this plan in a separate session. The owner has already authorized implementation in the current session.
+> For the implementing agent: use the established plan-execution workflow when continuing this plan in a separate session. The owner has already authorized implementation within the approved design's scope.
 
 **Goal:** Deliver a tested, documented, MIT-licensed skill repository ready for public GitHub publication.
 
@@ -41,7 +41,7 @@ Create `SKILL.md`, `agents/openai.yaml`, `references/{documentation,access-and-d
 Create `README.md`, `LICENSE`, `NOTICE.md`, `SECURITY.md`, `CONTRIBUTING.md`, `.gitignore`, `.gitattributes`, `.github/workflows/validate.yml`, `assets/banner.svg`, and `tests/test_package.py`.
 
 - Use a distinctive dark/navy and mint original banner with accessible text, readable mobile composition, compact capability sections, install instructions, and realistic prompts.
-- Describe Codex, Claude Code, Antigravity, and Hermes separately and distinguish intended portability from actual runtime tests.
+- Describe runtime-specific installation examples and distinguish intended portability from actual runtime tests.
 - Keep secrets, router exports, local reports, caches, and bytecode ignored; install nothing into active runtime skill directories.
 - Validate local Markdown links, parse SVG/XML and JSON, and visually inspect the banner/README layout using existing local rendering tools.
 

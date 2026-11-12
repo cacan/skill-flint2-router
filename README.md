@@ -26,7 +26,7 @@
 
 ## What it does
 
-`skill-flint2-router` helps a capable coding agent configure and troubleshoot **Flint 2 (GL-MT6000) running GL.iNet 4.x**. It starts with your actual firmware and current configuration, looks up the relevant official guide, and carries out the change you requested with an appropriate recovery and verification plan.
+`skill-flint2-router` helps your agent configure and troubleshoot **Flint 2 (GL-MT6000) running GL.iNet 4.x**. It starts with your actual firmware and current configuration, looks up the relevant official guide, and carries out the change you requested with an appropriate recovery and verification plan.
 
 It is an Agent Skills package: instructions, focused references, and two small optional helpers. Your agent supplies the shell, SSH access, and documentation tools.
 
@@ -55,21 +55,24 @@ The core instructions need no Python packages. The optional helpers require **Py
 
 Place a reviewed copy of this repository at the appropriate skill location, preserving `SKILL.md`, `references/`, and `scripts/`. Use your runtime's normal review/installation process; preserve existing files when a destination already exists.
 
+The operating instructions are shared across agents. Choose the integration path for your environment; examples include:
+
 | Agent | Discovery and requirements |
 | --- | --- |
 | **Codex** | Personal package: `~/.codex/skills/skill-flint2-router/`. Includes optional `agents/openai.yaml` UI metadata. Invoke `$skill-flint2-router` or let normal skill discovery select it. |
 | **Claude Code** | Personal package: `~/.claude/skills/skill-flint2-router/`; project package: `.claude/skills/skill-flint2-router/`. Invoke `/skill-flint2-router` through Claude's native skill mechanism. |
-| **Antigravity** | Use the skill directory documented by your installed IDE/CLI version. The portable Markdown/CLI core has no Gemini-specific dependency. Verify discovery in that installation. |
-| **Hermes** | Use its native reviewed skill installer/category and verify discovery. No Hermes-specific tool names or lifecycle hooks are required by the core. |
+| **Antigravity** | Use the native skill directory documented by your installed IDE/CLI version; verify discovery and required tools there. |
+| **Hermes** | Use its native reviewed skill installer/category and verify discovery, tool access, and permission controls in that environment. |
+| **Other compatible agents** | Use the agent's native skill installer or discovery directory. Verify package loading, local file access, shell/OpenSSH, and public documentation retrieval. |
 
 These are **intended integration paths**, not a claim that every runtime or live router has been tested. Shell, SSH, web tools, credentials, and permissions must be available independently in each environment. No MCP server is required.
 
 ### 3. Give it a concrete outcome
 
-For Codex, for example:
+For example, ask your agent:
 
 ```text
-Use $skill-flint2-router. My router is at <router-address>.
+Use the installed skill-flint2-router skill. My router is at <router-address>.
 Inspect the model and firmware, then reserve <client-address> for
 <client-MAC>. Preserve existing reservations and verify the result.
 ```
@@ -94,7 +97,7 @@ Verify the host fingerprint through a trusted channel before accepting a first c
 
 A successful manual login verifies that connection; it does not authenticate the helper's separate SSH process. A passphrase-protected key must already be usable non-interactively, for example through the existing SSH agent. Key creation/authorization and SSH setting changes are separate actions, not part of the read-only review.
 
-Start the full review by opening a new Hermes chat and pasting the **Start here** prompt below. Supply the actual connection details if Hermes does not already have them. The helper alone returns a small identification inventory, not the complete configuration review. Detailed access rules and helper options are in [Access and discovery](references/access-and-discovery.md).
+Start the full review by opening a new agent session and pasting the **Start here** prompt below. Supply the actual connection details if your agent does not already have them. The helper alone returns a small identification inventory, not the complete configuration review. Detailed access rules and helper options are in [Access and discovery](references/access-and-discovery.md).
 
 </details>
 
@@ -103,9 +106,9 @@ Start the full review by opening a new Hermes chat and pasting the **Start here*
 Choose a starting prompt. Each example is collapsed so you can expand only the task you need.
 
 <details>
-<summary><strong>Start here: read-only SSH configuration review (Hermes)</strong></summary>
+<summary><strong>Start here: read-only SSH configuration review</strong></summary>
 
-Paste this into a new Hermes chat after installing the skill. It reuses existing connection details or asks for the missing ones, reviews current state, and stops before applying changes.
+Paste this into a new session with your agent after installing the skill. It reuses existing connection details or asks for the missing ones, reviews current state, and stops before applying changes.
 
 ```text
 Use your installed skill-flint2-router skill to inspect my GL.iNet Flint 2 (GL-MT6000) over SSH and review its current configuration. This task is read-only: inspect, explain, and recommend; do not apply changes.
@@ -199,7 +202,7 @@ The skill does not guess private RPC methods or treat a successful command as pr
 ```text
 skill-flint2-router/
 ├── SKILL.md                    Agent entrypoint
-├── agents/openai.yaml          Optional Codex metadata
+├── agents/openai.yaml          Optional runtime UI metadata
 ├── references/                 Focused operating guidance + source catalog
 ├── scripts/                    Two dependency-free Python helpers
 ├── tests/                      Offline helper and package checks
