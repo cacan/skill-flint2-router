@@ -14,7 +14,7 @@ Configuration writes are task-specific agent actions, not helper functionality. 
 
 Keep credentials, private keys, full profiles, backups, full configuration exports, client identifiers/topology, DNS query history, logs, and scanner reports outside the published repository. Ignore rules are a convenience, not a secret detector. Use synthetic examples and inspect every staged diff before committing.
 
-Optional static scanning can be performed with NVIDIA SkillSpector or your organization's review tooling. Static dependency analysis may query package vulnerability services even when LLM analysis is disabled. Local scan receipts can contain paths and snippets; this repository publishes a limited validation record, not raw scanner output.
+Optional static scanning can be performed with NVIDIA SkillSpector or your organization's review tooling. Static dependency analysis may query package vulnerability services even when LLM analysis is disabled. Keep detailed review receipts and scanner output private; public test commands, coverage, and limitations are described in the [README](README.md#validation).
 
 ## Reporting a vulnerability
 
@@ -22,4 +22,4 @@ Do not post credentials, reachable router addresses, private diagnostics, or a w
 
 Report package/version, affected file or behavior, a synthetic reproduction, impact, and any mitigation. For vulnerabilities in router firmware or a third-party application, use that project's official security reporting process.
 
-No security SLA or supported firmware-version guarantee is implied. Review the [validation record](repository-docs/validation.md) for the actual scope of testing.
+No security SLA or supported firmware-version guarantee is implied. Review the [validation scope](README.md#validation) before relying on this package.

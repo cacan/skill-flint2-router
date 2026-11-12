@@ -205,8 +205,7 @@ skill-flint2-router/
 ├── agents/openai.yaml          Optional runtime UI metadata
 ├── references/                 Focused operating guidance + source catalog
 ├── scripts/                    Two dependency-free Python helpers
-├── tests/                      Offline helper and package checks
-└── repository-docs/            Design, plan, and validation evidence
+└── tests/                      Offline helper and package checks
 ```
 
 The [official source catalog](references/official-docs.json) initially covers **87 fetched pages**, including **82 Interface Guide URLs** with historical/version variants. It stores links and provenance, not a bundled copy of the manuals. See [documentation routing](references/documentation.md) for selection and refresh rules.
@@ -236,7 +235,7 @@ The repository includes offline tests for SSH argument safety, host-key settings
 python -B -m unittest discover -s tests -v
 ```
 
-The CI workflow is configured to run the offline suite on Linux and Windows. Its result tests the package; it does not certify router firmware or network isolation. See [validation evidence and limitations](repository-docs/validation.md) for the release's actual checks, behavioral evaluations, and static security review.
+The CI workflow runs the offline suite on Linux and Windows. See [GitHub Actions](https://github.com/cacan/skill-flint2-router/actions) for results by revision and [security and data handling](SECURITY.md) for the execution model and review boundaries. Passing these checks does not certify router firmware, network isolation, or an agent runtime's permission enforcement.
 
 **Live-router execution and runtime-loader compatibility require separate verification in the target environment.** No real router changes are needed to run the repository tests.
 

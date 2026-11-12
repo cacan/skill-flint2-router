@@ -25,7 +25,7 @@ class PackageTests(unittest.TestCase):
         self.assertLess(len(text.split()), 850)
 
     def test_markdown_and_html_local_links_resolve(self):
-        paths = list(ROOT.glob("*.md")) + list((ROOT / "references").glob("*.md")) + list((ROOT / "repository-docs").rglob("*.md"))
+        paths = list(ROOT.glob("*.md")) + list((ROOT / "references").rglob("*.md"))
         for path in paths:
             text = re.sub(r"```.*?```", "", path.read_text(encoding="utf-8"), flags=re.S)
             links = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'(?:href|src)="([^"]+)"', text)

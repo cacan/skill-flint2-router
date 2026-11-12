@@ -31,7 +31,7 @@ Use [the refresh workflow](references/documentation.md) to write a new candidate
 
 1. Review every changed instruction, script, dependency, network destination, and sensitive behavior.
 2. Run structural validation, the offline suite, link checks, and the target environment's final-payload security review. Re-scan after changes. Keep receipts outside runtime discovery and this repository.
-3. Update the factual validation record. Distinguish fixture tests, behavioral evaluations, actual loader checks, and real hardware execution. Do not promote intended compatibility to tested support.
+3. Keep the README's public test commands, coverage, and limitations accurate. Distinguish fixture tests, behavioral evaluations, actual loader checks, and real hardware execution. Keep internal authoring plans and detailed review evidence in private working storage outside the public checkout. Do not promote intended compatibility to tested support.
 4. Inspect the complete staged diff for secrets, local paths, unrelated edits, generated output, downloaded content, and binary router backups.
 5. Commit the complete coherent change. Publishing or installing runtime copies is a separate authorized action.
 
